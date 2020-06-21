@@ -8,7 +8,7 @@ mongoose.set('useFindAndModify', false);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
-mongoose.connect('mongodb+srv://admin-gyanendra:Admin123@cluster0-osdsq.mongodb.net/todolistDB', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://admin-gyanendra:{password}@{mongoDB cluster}/{DB}', { useNewUrlParser: true, useUnifiedTopology: true });
 const itemsSchema = {
     name: String
 };
